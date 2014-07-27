@@ -9,6 +9,10 @@
 
 ![screenshot1](https://github.com/naiyu/GitTutorial/blob/master/screenshot/s2.png "")
 
+##下载使用
+
+![download](https://github.com/naiyu/GitTutorial/blob/master/apk/liantu.png "")
+
 源码已开源至：[github](https://github.com/naiyu/GitTutorial "")
 
 联系我：[@骑行者骑蜗牛](http://weibo.com/coderyu0408 "")
