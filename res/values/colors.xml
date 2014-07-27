@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- some background colors -->
+    <color name="c_main_bg">#ffffff</color>
+    <color name="c_menu_bg">#ffffff</color>
+    <color name="c_menu_click_bg">#dfdfdf</color>
+    
+    <color name="c_title_nav_bg">#0177d9</color>
+    
+    <color name="c_white">#ffffff</color>
+    <color name="c_black">#3e3e3e</color>
+    <color name="c_tran">#00000000</color>
+    
+    <color name="c_menu_font">#777777</color>
+    
+    <color name="c_listview_sperator">#e5e5e5</color>
+    
+    <color name="item_press_color">#d9d9d9</color>
+    
+</resources>

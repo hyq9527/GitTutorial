@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Git教程</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="again_back">再按一次返回退出</string>
+    
+    <string name="catalog">目录</string>
+    
+    <string name="about">关于</string>
+
+</resources>

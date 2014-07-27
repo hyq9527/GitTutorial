@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+   <link href="style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">    function showPic(toast) {        Git.showPic(toast);    }		function playVedio(url) {    	Git.playVideo(url);    }</script>    
+   
+</head>
+<body>
+    <p>如果标签打错了，也可以删除：</p>
+
+<pre><code class="bash">$ git tag -d v0.1
+Deleted tag <span class="string">'v0.1'</span> (was e078af9)
+</code></pre>
+
+<p>因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。</p>
+
+<p>如果要推送某个标签到远程，使用命令git push origin tagname：</p>
+
+<pre><code class="bash">$ git push origin v1.0
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:michaelliao/learngit.git
+ * <span class="test_condition">[new tag]</span>         v1.0 -&gt; v1.0
+</code></pre>
+
+<p>或者，一次性推送全部尚未推送到远程的本地标签：</p>
+
+<pre><code class="bash">$ git push origin --tags
+Counting objects: 1, <span class="keyword">done</span>.
+Writing objects: 100% (1/1), 554 bytes, <span class="keyword">done</span>.
+Total 1 (delta 0), reused 0 (delta 0)
+To git@github.com:michaelliao/learngit.git
+ * <span class="test_condition">[new tag]</span>         v0.2 -&gt; v0.2
+ * <span class="test_condition">[new tag]</span>         v0.9 -&gt; v0.9
+</code></pre>
+
+<p>如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除：</p>
+
+<pre><code class="bash">$ git tag -d v0.9
+Deleted tag <span class="string">'v0.9'</span> (was 6224937)
+</code></pre>
+
+<p>然后，从远程删除。删除命令也是push，但是格式如下：</p>
+
+<pre><code class="bash">$ git push origin :refs/tags/v0.9
+To git@github.com:michaelliao/learngit.git
+ - <span class="test_condition">[deleted]</span>         v0.9
+</code></pre>
+
+<p>要看看是否真的从远程库删除了标签，可以登陆GitHub查看。</p>
+
+<p><img src="images/vedio.png" width="100%" onClick="playVedio('http://liaoxuefeng-liaoxuefeng.stor.sinaapp.com/learngit/video/git-tag-d.mp4')"></p>
+
+<h2>小结</h2>
+
+<ul>
+<li>命令git push origin tagname可以推送一个本地标签；</li>
+<li>命令git push origin --tags可以推送全部未推送过的本地标签；</li>
+<li>命令git tag -d tagname可以删除一个本地标签；</li>
+<li>命令git push origin :refs/tags/tagname可以删除一个远程标签。</li>
+</ul>
+
+</body>
+</html>

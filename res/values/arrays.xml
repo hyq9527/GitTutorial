@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="menu_name">
+        <item >关于</item>
+        <item >Git教程</item>
+        <item >Git简介</item>
+        <item >　Git的诞生</item>
+        <item >　集中式vs分布式</item>
+        <item >安装Git</item>
+        <item >创建版本库</item>
+        <item >时光机穿梭</item>
+        <item >　版本回退</item>
+        <item >　工作区和暂存区</item>
+        <item >　管理修改</item>
+        <item >　撤销修改</item>
+        <item >　删除文件</item>
+        <item >远程仓库</item>
+        <item >　添加远程库</item>
+        <item >　从远程库克隆</item>
+        <item >分支管理</item>
+        <item >　创建与合并分支</item>
+        <item >　解决冲突</item>
+        <item >　分支管理策略</item>
+        <item >　Bug分支</item>
+        <item >　Feature分支</item>
+        <item >　多人协作</item>
+        <item >标签管理</item>
+        <item >　创建标签</item>
+        <item >　操作标签</item>
+        <item >使用GitHub</item>
+        <item >自定义Git</item>
+        <item >　忽略特殊文件</item>
+        <item >　配置别名</item>
+        <item >　搭建Git服务器</item>
+        <item >期末总结</item>
+    </string-array>
+    
+    <string-array name="menu_url">
+        <item >about.html</item>
+        <item >00.html</item>
+        <item >01.html</item>
+        <item >0101.html</item>
+        <item >0102.html</item>
+        <item >02.html</item>
+        <item >03.html</item>
+        <item >04.html</item>
+        <item >0401.html</item>
+        <item >0402.html</item>
+        <item >0403.html</item>
+        <item >0404.html</item>
+        <item >0405.html</item>
+        <item >05.html</item>
+        <item >0501.html</item>
+        <item >0502.html</item>
+        <item >06.html</item>
+        <item >0601.html</item>
+        <item >0602.html</item>
+        <item >0603.html</item>
+        <item >0604.html</item>
+        <item >0605.html</item>
+        <item >0606.html</item>
+        <item >07.html</item>
+        <item >0701.html</item>
+        <item >0702.html</item>
+        <item >08.html</item>
+        <item >09.html</item>
+        <item >0901.html</item>
+        <item >0902.html</item>
+        <item >0903.html</item>
+        <item >10.html</item>
+    </string-array>
+    
+</resources>

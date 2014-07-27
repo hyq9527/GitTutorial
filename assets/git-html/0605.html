@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+   <link href="style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">    function showPic(toast) {        Git.showPic(toast);    }		function playVedio(url) {    	Git.playVideo(url);    }</script>   
+   
+</head>
+<body>
+    <p>软件开发中，总有无穷无尽的新的功能要不断添加进来。</p>
+
+<p>添加一个新功能时，你肯定不希望因为一些实验性质的代码，把主分支搞乱了，所以，每添加一个新功能，最好新建一个feature分支，在上面开发，完成后，合并，最后，删除该feature分支。</p>
+
+<p>现在，你终于接到了一个新任务：开发代号为Vulcan的新功能，该功能计划用于下一代星际飞船。</p>
+
+<p>于是准备开发：</p>
+
+<pre><code class="bash">$ git checkout -b feature-vulcan
+Switched to a new branch <span class="string">'feature-vulcan'</span>
+</code></pre>
+
+<p>5分钟后，开发完毕：</p>
+
+<pre><code class="java">$ git status
+# On branch feature-vulcan
+# Changes to be committed:
+#   (use <span class="string">"git reset HEAD &lt;file&gt;..."</span> to unstage)
+#
+#       <span class="keyword">new</span> file:   vulcan.py
+#
+$ git add vulcan.py
+$ git commit -m <span class="string">"add feature vulcan"</span>
+[feature-vulcan <span class="number">756</span>d<span class="number">4</span>af] add feature vulcan
+ <span class="number">1</span> file changed, <span class="number">2</span> insertions(+)
+ create mode <span class="number">100644</span> vulcan.py
+</code></pre>
+
+<p>切回dev，准备合并：</p>
+
+<pre><code class="bash">$ git checkout dev
+</code></pre>
+
+<p>一切顺利的话，feature分支和bug分支是类似的，合并，然后删除。</p>
+
+<p>但是，</p>
+
+<p>就在此时，接到上级命令，因经费不足，新功能必须取消！</p>
+
+<p>虽然白干了，但是这个分支还是必须就地销毁：</p>
+
+<pre><code class="bash">$ git branch -d feature-vulcan
+error: The branch <span class="string">'feature-vulcan'</span> is not fully merged.
+If you are sure you want to delete it, run <span class="string">'git branch -D feature-vulcan'</span>.
+</code></pre>
+
+<p>销毁失败。Git友情提醒，feature-vulcan分支还没有被合并，如果删除，将丢失掉修改，如果要强行删除，需要使用命令git branch -D feature-vulcan。</p>
+
+<p>现在我们强行删除：</p>
+
+<pre><code class="bash">$ git branch -D feature-vulcan
+Deleted branch feature-vulcan (was 756d4af).
+</code></pre>
+
+<p>终于删除成功！</p>
+
+<p><img src="images/vedio.png" width="100%" onClick="playVedio('http://liaoxuefeng-liaoxuefeng.stor.sinaapp.com/learngit/video/force-delete-br.mp4')"></p>
+
+<h2>小结</h2>
+
+<p>开发一个新feature，最好新建一个分支；</p>
+
+<p>如果要丢弃一个没有被合并过的分支，可以通过git branch -D name强行删除。</p>
+
+</body>
+</html>

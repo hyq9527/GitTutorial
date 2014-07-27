@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="title_nav_height">48dp</dimen>
+    
+    <dimen name="title_font_size">22sp</dimen>
+    <dimen name="menu_font_size">20sp</dimen>
+    
+    <dimen name="listview_divider_height">1dp</dimen>
+    <dimen name="menu_height">280dp</dimen>
+    
+    <dimen name="menu_tv_padding">14dp</dimen>
+    
+    <dimen name="listview_margin_left_right">10dp</dimen>
+    
+
+</resources>
