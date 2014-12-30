@@ -11,7 +11,7 @@
 
 ##下载使用
 
-![download](https://github.com/naiyu/GitTutorial/blob/master/apk/liantu.png "")
+![download](https://github.com/naiyu/GitTutorial/blob/master/apk/erweima.png "")
 
 源码已开源至：[github](https://github.com/naiyu/GitTutorial "")
 
